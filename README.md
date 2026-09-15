@@ -1,51 +1,38 @@
-# Cyber Attack Detection Project
+# Cybersecurity Attack Analysis and Detection System
 
-This project was developed during my internship to analyze cybersecurity attack data and identify different types of cyber attacks using Machine Learning.
+A machine learning project developed during my internship to analyze cybersecurity attack data and detect different types of cyber threats.
 
-The project uses data preprocessing, feature encoding, Random Forest classification, and Streamlit for displaying cybersecurity data and predictions.
+The project uses data preprocessing, feature engineering, visualization, and a tree-based machine learning model called **Random Forest Classifier**.
 
-## Project Features
+## Machine Learning Model
 
-- Loads and analyzes cybersecurity attack data
-- Performs data preprocessing and feature selection
-- Converts categorical data using OneHotEncoder
-- Trains a Random Forest Classifier
-- Saves the trained machine learning model
-- Visualizes cybersecurity data using Matplotlib and Seaborn
-- Provides an interactive Streamlit web application
+The main model used in this project is:
 
-## Technologies Used
+**Random Forest Classifier**
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Random Forest
-- Joblib
-- Streamlit
-- Matplotlib
-- Seaborn
+Random Forest is a tree-based machine learning algorithm that creates multiple decision trees and combines their predictions to improve accuracy and reduce overfitting.
 
-## Project Structure
+In this project, the Random Forest model is used to classify cybersecurity records into different attack types based on network and traffic-related features.
+
+## Model Workflow
 
 ```text
-CyberAttackProject/
-│
-├── pages/
-│
-├── app.py
-├── train_model.py
-├── cybersecurity_attacks.csv
-├── requirements.txt
-├── random_forest_model.pkl
-└── README.md
-
-## Model File
-
-The trained Random Forest model is not included in the repository
-because of GitHub's file size limit.
-
-Run the following command to generate the model:
-
-```bash
-python train_model.py
+Cybersecurity Dataset
+        ↓
+Data Cleaning
+        ↓
+Feature Selection
+        ↓
+Categorical Encoding
+        ↓
+Train-Test Split
+        ↓
+Random Forest Classifier
+        ↓
+Multiple Decision Trees
+        ↓
+Combined Prediction
+        ↓
+Cyber Attack Classification
+        ↓
+Streamlit Dashboard
