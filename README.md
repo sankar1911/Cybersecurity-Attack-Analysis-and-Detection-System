@@ -39,3 +39,13 @@ CyberAttackProject/
 ├── requirements.txt
 ├── random_forest_model.pkl
 └── README.md
+
+## Model File
+
+The trained Random Forest model is not included in the repository
+because of GitHub's file size limit.
+
+Run the following command to generate the model:
+
+```bash
+python train_model.py
